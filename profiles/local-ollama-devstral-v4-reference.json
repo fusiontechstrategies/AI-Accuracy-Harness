@@ -1,0 +1,11 @@
+{
+  "schema_version": "fusion.local-qualified-lane-reference/v1",
+  "package": "Accuracy-Harness-v4.0-Structural-Managed",
+  "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+  "model_digest": "24277f07f62db8f9cb68e9dfc679ea1818a7fbac47a50eff0a701d3f645b63c8",
+  "qualified_task_class": "LOCAL_PYTHON_TEST_EXTRACTION",
+  "network": "DENIED",
+  "authority": "PROPOSAL_ONLY",
+  "automatic_promotion": false,
+  "note": "This package references, but does not broaden, the separately sealed v4 local qualification. A new adapter or task class requires a new qualification series."
+}

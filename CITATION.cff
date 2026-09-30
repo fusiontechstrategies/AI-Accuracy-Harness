@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using this metadata."
+title: "AI Accuracy Harness"
+type: software
+version: 5.0.0
+date-released: 2026-09-10
+authors:
+  - name: "Fusion Technology Strategies"
+repository-code: "https://github.com/fusiontechstrategies/AI-Accuracy-Harness"
+license: Apache-2.0

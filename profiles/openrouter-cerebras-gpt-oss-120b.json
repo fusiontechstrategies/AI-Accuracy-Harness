@@ -1,0 +1,9 @@
+{
+  "schema_version": "fusion.openrouter-provider-profile/v1",
+  "model": "openai/gpt-oss-120b",
+  "provider": "Cerebras",
+  "temperature": 0,
+  "top_p": 1,
+  "base_seed": 4200,
+  "request_endpoint_maximum": true
+}

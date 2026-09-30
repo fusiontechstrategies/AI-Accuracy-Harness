@@ -1,0 +1,14 @@
+{
+  "schema_version": "fusion.hybrid-harness-evidence-index/v1",
+  "recorded_at_utc": "2026-09-10T16:00:00Z",
+  "entries": [
+    {"path": "bounded-structural-qualification-summary.json", "sha256": "f9ca78c37f7a59518fe7c9013b654df5afa5c111ba91fcd70308440a3858140", "disposition": "QUALIFIED_BOUNDED_PROPOSAL_ONLY"},
+    {"path": "open-security-audit-high-r04-summary.json", "sha256": "964b1c17313fc8dbdfffd71b36d7c5852b9099fb41fa02795e4087fe7f3e1a1", "disposition": "REJECTED_NO_SCHEMA_VALID_CALLS"},
+    {"path": "open-security-audit-high-r05-summary.json", "sha256": "1a284d2ada0dd3677db65020cb39ba41369ec41e1cfded8979f1d1959d4bbab9", "disposition": "REJECTED_NO_SCHEMA_VALID_CALLS"},
+    {"path": "open-security-audit-medium-r06-summary.json", "sha256": "12d5e51b9e3e90531ac01e7bfc5021b25df395eb61abb3a4f0b472b2522ce7dc", "disposition": "REJECTED_SEMANTIC_SECURITY_FAILURE"},
+    {"path": "targeted-invariant-probes-r07-summary.json", "sha256": "16a21189b577914e59f2ef484de73ba4b2cb91aba566b532d230b8a17f35479c", "disposition": "ADVISORY_HYPOTHESES_ONLY"},
+    {"path": "packaged-live-selftest-summary.json", "sha256": "016f1de6d04888312727dc66d3640ade9836382c94929f4f5156671d39612783", "disposition": "PASS"},
+    {"path": "packaged-live-selftest-seal.json", "sha256": "e25493f6b9cbb895628b43b7a717c7057c12d4b4b9a823db1e836ca10e11c50b", "disposition": "PASS"},
+    {"path": "tamper-negative-test.json", "sha256": "527f671c3a5ade50f07cd8a5132d57348bc9c60d6f307c9216fba3664701a670", "disposition": "PASS_FAIL_CLOSED"}
+  ]
+}

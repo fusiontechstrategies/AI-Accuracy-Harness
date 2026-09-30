@@ -1,0 +1,11 @@
+{
+  "schema_version": "fusion.hybrid-routing-request/v1",
+  "task_id": "EXAMPLE-REMOTE-BOUNDED",
+  "task_class": "BOUNDED_STRUCTURAL_SELECTION",
+  "risk_tier": "LOW",
+  "contains_restricted_data": false,
+  "external_action_required": false,
+  "deterministic_oracle_available": true,
+  "local_adapter_qualified": false,
+  "remote_adapter_qualified": true
+}

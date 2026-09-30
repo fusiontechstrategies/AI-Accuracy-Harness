@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">AI Accuracy Harness qualification results</title>
+  <desc id="desc">Thirty-nine of thirty-nine bounded calls passed, median latency was 1.867 seconds, reported series cost was 0.1255677 dollars, and tampered evidence was rejected.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071a16"/><stop offset="1" stop-color="#0f172a"/></linearGradient></defs>
+  <rect width="1200" height="430" rx="24" fill="url(#bg)"/>
+  <text x="55" y="62" fill="#f8fafc" font-family="Segoe UI,Arial,sans-serif" font-size="29" font-weight="700">Qualification snapshot</text>
+  <text x="55" y="94" fill="#a7f3d0" font-family="Segoe UI,Arial,sans-serif" font-size="17">Exact bounded lane · 13 cases · 3 repeats per case</text>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <g transform="translate(55 135)"><rect width="250" height="190" rx="18" fill="#102a24" stroke="#34d399" stroke-width="2"/><text x="125" y="70" text-anchor="middle" fill="#6ee7b7" font-size="44" font-weight="800">39 / 39</text><text x="125" y="108" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="600">bounded calls passed</text><text x="125" y="145" text-anchor="middle" fill="#a7f3d0" font-size="16">0 failures · 0 repairs</text></g>
+    <g transform="translate(335 135)"><rect width="250" height="190" rx="18" fill="#13243a" stroke="#60a5fa" stroke-width="2"/><text x="125" y="70" text-anchor="middle" fill="#93c5fd" font-size="44" font-weight="800">1.867 s</text><text x="125" y="108" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="600">median latency</text><text x="125" y="145" text-anchor="middle" fill="#bfdbfe" font-size="16">6.158 s p95 · 8.239 s max</text></g>
+    <g transform="translate(615 135)"><rect width="250" height="190" rx="18" fill="#2a2034" stroke="#c084fc" stroke-width="2"/><text x="125" y="70" text-anchor="middle" fill="#d8b4fe" font-size="38" font-weight="800">$0.1256</text><text x="125" y="108" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="600">reported series cost</text><text x="125" y="145" text-anchor="middle" fill="#e9d5ff" font-size="16">exact: $0.1255677</text></g>
+    <g transform="translate(895 135)"><rect width="250" height="190" rx="18" fill="#33260f" stroke="#fbbf24" stroke-width="2"/><text x="125" y="70" text-anchor="middle" fill="#fde68a" font-size="38" font-weight="800">REJECTED</text><text x="125" y="108" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="600">tampered evidence</text><text x="125" y="145" text-anchor="middle" fill="#fef3c7" font-size="16">hash mismatch detected</text></g>
+  </g>
+  <rect x="55" y="355" width="1090" height="42" rx="21" fill="#3f1d2e" stroke="#fb7185"/><text x="600" y="382" text-anchor="middle" fill="#fecdd3" font-family="Segoe UI,Arial,sans-serif" font-size="17" font-weight="600">Open-ended security review: NOT QUALIFIED — routes to independent lead</text>
+</svg>

@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "fusion.hybrid-routing-request/v1"},
+    "task_id": {"type": "string", "minLength": 1, "maxLength": 128},
+    "task_class": {
+      "type": "string",
+      "enum": [
+        "LOCAL_PYTHON_TEST_EXTRACTION",
+        "BOUNDED_STRUCTURAL_SELECTION",
+        "OPEN_SECURITY_ANALYSIS",
+        "CODE_EDIT",
+        "EXTERNAL_ACTION",
+        "UNCLASSIFIED"
+      ]
+    },
+    "risk_tier": {"type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]},
+    "contains_restricted_data": {"type": "boolean"},
+    "external_action_required": {"type": "boolean"},
+    "deterministic_oracle_available": {"type": "boolean"},
+    "local_adapter_qualified": {"type": "boolean"},
+    "remote_adapter_qualified": {"type": "boolean"}
+  },
+  "required": [
+    "schema_version",
+    "task_id",
+    "task_class",
+    "risk_tier",
+    "contains_restricted_data",
+    "external_action_required",
+    "deterministic_oracle_available",
+    "local_adapter_qualified",
+    "remote_adapter_qualified"
+  ]
+}

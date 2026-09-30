@@ -1,0 +1,22 @@
+{
+  "schema_version": "fusion.managed-worker-packet/v1",
+  "task_id": "EXAMPLE-BOUNDED-SELECTION",
+  "risk_tier": "LOW",
+  "reasoning_effort": "high",
+  "candidate_count": 1,
+  "system_prompt": "You are an untrusted proposal-only worker. Select one preregistered option. Do not call tools and do not approve your own answer.",
+  "user_prompt": "Choose the safest registered option for the supplied project packet. The allowed options are A, B, and C. Return only the contracted JSON.",
+  "response_schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "schema_version": {"const": "fusion.selection/v1"},
+      "task_id": {"const": "EXAMPLE-BOUNDED-SELECTION"},
+      "choice": {"type": "string", "enum": ["A", "B", "C"]},
+      "rationale": {"type": "string", "maxLength": 700},
+      "limitations": {"type": "array", "items": {"type": "string", "maxLength": 300}}
+    },
+    "required": ["schema_version", "task_id", "choice", "rationale", "limitations"]
+  }
+}

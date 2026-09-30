@@ -1,0 +1,21 @@
+name: Test and verify
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run unit and adversarial tests
+        run: python -m unittest discover -s tests -v
+      - name: Verify packaged file inventory and hashes
+        run: python tools/verify_package.py

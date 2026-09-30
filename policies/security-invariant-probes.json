@@ -1,0 +1,23 @@
+{
+  "schema_version": "fusion.security-invariant-probes/v1",
+  "status": "ADVISORY_ONLY_NOT_QUALIFIED_FOR_AUTONOMOUS_APPROVAL",
+  "probes": [
+    {
+      "id": "NESTED-CAPABILITY-LIFETIME",
+      "purpose": "Enumerate outer and nested close or release paths and prove live kernel-backed state immediately before irreversible mutation."
+    },
+    {
+      "id": "AUTHENTICATED-STATE-ROLLBACK",
+      "purpose": "Restore previously valid authenticated state and require a non-rollbackable monotonic generation or consumed-authority tombstone."
+    },
+    {
+      "id": "CALLBACK-VERIFIER-BINDING",
+      "purpose": "Bind the exact verifier before untrusted callbacks and revalidate immutable anchors before and after verification."
+    },
+    {
+      "id": "REPLAY-FILESYSTEM-INDEPENDENCE",
+      "purpose": "Reject cross-root hardlinks and rerun the complete validation ring from an independently materialized replay root."
+    }
+  ],
+  "operating_rule": "A model finding is a hypothesis until an independent deterministic exploit or regression test proves it."
+}

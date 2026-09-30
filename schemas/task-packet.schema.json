@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "fusion.managed-worker-packet/v1"},
+    "task_id": {"type": "string", "minLength": 1, "maxLength": 128},
+    "risk_tier": {"type": "string", "enum": ["LOW", "MEDIUM", "HIGH", "CRITICAL"]},
+    "reasoning_effort": {"type": "string", "enum": ["low", "medium", "high"]},
+    "candidate_count": {"type": "integer", "minimum": 1},
+    "system_prompt": {"type": "string", "minLength": 1},
+    "user_prompt": {"type": "string", "minLength": 1},
+    "response_schema": {"type": "object"}
+  },
+  "required": [
+    "schema_version",
+    "task_id",
+    "risk_tier",
+    "reasoning_effort",
+    "candidate_count",
+    "system_prompt",
+    "user_prompt",
+    "response_schema"
+  ]
+}

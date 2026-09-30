@@ -1,0 +1,19 @@
+{
+  "schema_version": "fusion.evidence-tamper-negative-test/v1",
+  "recorded_at_utc": "2026-09-10T16:00:00Z",
+  "original_evidence": {
+    "summary_sha256": "016f1de6d04888312727dc66d3640ade9836382c94929f4f5156671d39612783",
+    "seal_sha256": "e25493f6b9cbb895628b43b7a717c7057c12d4b4b9a823db1e836ca10e11c50b",
+    "seal_root_sha256": "2a1b00085925c4aabf25ffe40eac7d50ce1c1d03f1b1ee70371394fea5cb9c56",
+    "verification_exit": 0,
+    "verification_status": "VERIFIED"
+  },
+  "mutation": "In an isolated copy only, changed proposal.choice from A to B without changing any receipt or seal.",
+  "tampered_evidence": {
+    "verification_exit": 1,
+    "verification_status": "REJECTED",
+    "rejection": "evidence hash mismatch: candidate-01/attempt-01/proposal.json"
+  },
+  "protected_or_original_evidence_modified": false,
+  "status": "PASS_FAIL_CLOSED"
+}

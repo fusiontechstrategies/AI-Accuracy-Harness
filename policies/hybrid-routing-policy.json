@@ -1,0 +1,34 @@
+{
+  "schema_version": "fusion.hybrid-routing-policy/v1",
+  "policy_version": "2026-09-10",
+  "lanes": {
+    "LOCAL_DEVSTRAL_V4": {
+      "model": "devstral-small-2:24b-instruct-2512-q4_K_M",
+      "model_digest": "24277f07f62db8f9cb68e9dfc679ea1818a7fbac47a50eff0a701d3f645b63c8",
+      "qualified_package": "Accuracy-Harness-v4.0-Structural-Managed",
+      "qualified_task_class": "LOCAL_PYTHON_TEST_EXTRACTION",
+      "network": "DENIED",
+      "authority": "PROPOSAL_ONLY"
+    },
+    "OPENROUTER_CEREBRAS_GPT_OSS_120B": {
+      "model": "openai/gpt-oss-120b",
+      "provider": "Cerebras",
+      "qualified_task_class": "BOUNDED_STRUCTURAL_SELECTION",
+      "provider_fallback": "DENIED",
+      "provider_data_collection": "DENIED",
+      "authority": "PROPOSAL_ONLY"
+    },
+    "LEAD_ONLY": {
+      "authority": "VERIFICATION_AND_APPROVAL",
+      "model_output": "ADVISORY_HYPOTHESIS_ONLY"
+    }
+  },
+  "rules": [
+    "HIGH or CRITICAL risk always routes to LEAD_ONLY.",
+    "Open security analysis, code editing, external actions, and unclassified work route to LEAD_ONLY.",
+    "Restricted data never leaves the host.",
+    "The local lane is admitted only for its exact qualified Python test-extraction class with a qualified adapter and deterministic oracle.",
+    "The Cerebras lane is admitted only for bounded structural selection with a qualified adapter, deterministic oracle, no restricted data, and no required external action.",
+    "No worker may approve, promote, execute tools, mutate a repository, or weaken a gate."
+  ]
+}
