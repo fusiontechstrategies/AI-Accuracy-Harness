@@ -12,6 +12,8 @@ AI work to qualified local or remote workers. It pins model and provider identit
 strict schemas, records complete receipts, seals evidence, and keeps every worker in a
 proposal-only role.
 
+![A robot clears 39 bounded checks and stops at the security review gate](docs/assets/evaluation-gate.png)
+
 ![AI Accuracy Harness flow](docs/assets/harness-flow.svg)
 
 ## Why this exists
