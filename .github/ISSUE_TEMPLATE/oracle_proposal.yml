@@ -1,0 +1,46 @@
+name: Deterministic oracle proposal
+description: Propose a mechanical way to grade one narrow AI task.
+title: "[Oracle]: "
+labels: [oracle, help wanted]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        A useful oracle reaches the same verdict without relying on another model's opinion.
+        Keep the proposal limited to one task class and use shareable examples.
+  - type: textarea
+    id: task
+    attributes:
+      label: Narrow task being graded
+      description: Define the exact input, allowed output, and boundary of the task.
+    validations:
+      required: true
+  - type: textarea
+    id: oracle
+    attributes:
+      label: Proposed oracle
+      description: Explain the deterministic checks and the evidence they consume.
+    validations:
+      required: true
+  - type: textarea
+    id: negatives
+    attributes:
+      label: Tempting wrong answers
+      description: Give at least two incorrect outputs the oracle must reject.
+    validations:
+      required: true
+  - type: textarea
+    id: ambiguity
+    attributes:
+      label: Ambiguity and abstention
+      description: When should the oracle return inconclusive and send the task to lead review?
+    validations:
+      required: true
+  - type: textarea
+    id: fixture
+    attributes:
+      label: Minimal public fixture
+      description: Provide or describe a synthetic fixture that can become a regression test.
+    validations:
+      required: true
+
