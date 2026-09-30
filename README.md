@@ -161,6 +161,7 @@ docs/           Quickstart, architecture, results, and graphics
 - [Adapting the pattern to another project](REUSE-WITH-OTHER-PROJECTS.md)
 - [Security policy](SECURITY.md)
 - [Contributing](CONTRIBUTING.md)
+- [Roadmap](ROADMAP.md)
 
 ## License
 
