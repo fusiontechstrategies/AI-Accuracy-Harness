@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability
+    url: https://github.com/fusiontechstrategies/AI-Accuracy-Harness/security/advisories/new
+    about: Report vulnerabilities privately. Do not disclose secrets or exploit details in an issue.
+  - name: Questions and design discussion
+    url: https://github.com/fusiontechstrategies/AI-Accuracy-Harness/discussions
+    about: Ask usage questions or discuss the evidence-first operating pattern.
+
