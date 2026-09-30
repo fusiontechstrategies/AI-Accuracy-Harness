@@ -54,6 +54,8 @@ result.
 
 ## Try the router in 60 seconds
 
+![Animated AI Accuracy Harness quickstart](docs/assets/quickstart-demo.gif)
+
 Requirements: Python 3.12 or newer. The router and test suite use only the Python standard
 library.
 
