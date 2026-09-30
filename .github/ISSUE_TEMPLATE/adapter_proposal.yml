@@ -1,0 +1,41 @@
+name: Adapter proposal
+description: Propose a narrow project adapter and its deterministic oracle.
+title: "[Adapter]: "
+labels: [adapter]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        An adapter proposal is not a qualification. Describe one bounded task class and the
+        mechanical evidence that can prove its result.
+  - type: textarea
+    id: task
+    attributes:
+      label: Bounded task class
+      description: What single repeatable decision or transformation should the worker propose?
+    validations:
+      required: true
+  - type: textarea
+    id: choices
+    attributes:
+      label: Preregistered choices and forbidden changes
+    validations:
+      required: true
+  - type: textarea
+    id: oracle
+    attributes:
+      label: Deterministic oracle
+      description: How will the project prove a proposal correct and reject tempting wrong answers?
+    validations:
+      required: true
+  - type: dropdown
+    id: sensitivity
+    attributes:
+      label: Data sensitivity
+      options:
+        - Synthetic or public data
+        - Restricted data requiring a local lane
+        - Unsure
+    validations:
+      required: true
+

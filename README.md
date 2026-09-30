@@ -4,7 +4,7 @@
 
 [![License: Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-3b82f6.svg)](LICENSE)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-0f766e.svg)](https://www.python.org/)
-[![Tests: 18 passing](https://img.shields.io/badge/tests-18%20passing-16a34a.svg)](#qualification-results)
+[![CI](https://github.com/fusiontechstrategies/AI-Accuracy-Harness/actions/workflows/ci.yml/badge.svg)](https://github.com/fusiontechstrategies/AI-Accuracy-Harness/actions/workflows/ci.yml)
 [![Authority: proposal only](https://img.shields.io/badge/authority-proposal%20only-7c3aed.svg)](#the-safety-boundary)
 
 AI Accuracy Harness is an evidence-first reference implementation for routing narrowly defined
